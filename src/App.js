@@ -25,11 +25,12 @@ import {CardList} from './Component/CardList/CardList.js';
     const {users} = this.state
     const filteredRobot=users.filter(searchfeild=>searchfeild.name.toLowerCase().includes(this.state.searchfeild.toLowerCase()))
     
+    
 
     return (
       <div className="App">
 
-        <h1>ROBO FRIENDS</h1> 
+        <h1>R0B0 FRIEND</h1> 
         <input type="text" onChange={this.filteredcard} placeholder="Search robots"/>
         
         <CardList users={filteredRobot}/>
